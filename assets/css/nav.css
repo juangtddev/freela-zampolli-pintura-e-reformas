@@ -10,15 +10,16 @@ nav {
 }
 
 .nav-container {
-  width: 70%;
+  max-width: 1440px;
   margin: 0 auto;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .logo {
-  width: 100px;
+  width: 80px;
 }
 
 .logo img {
@@ -83,7 +84,7 @@ nav {
 @media (max-width: 1023px) {
   .nav-container {
     width: 100%;
-    padding: 0 20px;
+    padding: 10px;
   }
 
   .logo {
@@ -93,7 +94,7 @@ nav {
     display: none;
   }
 
-  header .btn {
+  .nav-container .btn {
     display: none;
   }
 

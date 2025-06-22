@@ -1,0 +1,34 @@
+/* Estilos da Hero Section */
+
+.hero {
+  margin-top: 0px;
+  height: 100vh;
+  width: 100%;
+  background: url("/assets/img/bg-hero.webp") center / 100% no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding-left: 135px;
+}
+
+.hero h1 {
+  color: var(--bg-color);
+  font-size: 3.75rem;
+  margin-bottom: 3rem;
+}
+
+/* Navegação mobile */
+
+@media (max-width: 1023px) {
+  .hero {
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+  }
+}
+
+@media (max-width: 743px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+}
