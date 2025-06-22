@@ -1,5 +1,5 @@
 // Seleção de elementos
-const menuLinks = document.querySelectorAll('.nav__link');
+const menuLinks = document.querySelectorAll('.menu-link');
 const sections = document.querySelectorAll('section');
 const hamburgerBtn = document.querySelector('.hamburger-btn');
 const mobileMenu = document.querySelector('.mobile-menu');
@@ -22,7 +22,7 @@ const observerCallback = (entries) => {
             menuLinks.forEach(link => link.classList.remove('active'));
 
             // Adiciona 'active' ao link correspondente
-            const activeLink = document.querySelector(`.nav__link[href="#${id}"]`);
+            const activeLink = document.querySelector(`.menu-link[href="#${id}"]`);
             if (activeLink) {
                 activeLink.classList.add('active');
             }
