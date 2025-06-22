@@ -1,0 +1,61 @@
+/* Estilos iniciais / padronização */
+:root {
+  --primary-text-color: #637381;
+  --secondary-text-color: #3f2d43;
+  --details-text-color: #ce8d55;
+  --bg-cta-color: #a64468;
+  --cta-color: #fff;
+  --bg-color: #fff;
+
+  --font-titles: "Montserrat", sans-serif;
+  --font-body: "Open Sans", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: var(--primary-text-color);
+  list-style: none;
+}
+
+html {
+  font-family: var(--font-body);
+}
+
+body {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+nav,
+a {
+  font-family: var(--font-titles);
+}
+
+.btn {
+  color: var(--cta-color);
+  background-color: var(--bg-cta-color);
+  font-weight: var(--font-weight-medium);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background-color: var(--details-text-color);
+  transition: 0.5s ease;
+}
+
+/* Hero Section */
+
+/* Tablets */

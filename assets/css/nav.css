@@ -1,0 +1,107 @@
+/* Barra de Navegação / Menu */
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%; /* Para ocupar toda a largura da tela */
+  background: white; /* se quiser evitar transparência */
+}
+
+.nav-container {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-between;
+  font-weight: var(--font-weight-medium);
+}
+
+.menu ul li {
+  padding: 0 20px;
+}
+
+.menu ul a:hover {
+  font-weight: var(--font-weight-semibold);
+}
+
+.active {
+  font-weight: var(--font-weight-bold);
+}
+
+/* Hamburguer Menu Styles */
+.hamburger-btn {
+  display: none; /* Escondido por padrão */
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 70px; /* Ajuste conforme altura da navbar */
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  padding: 1rem 0;
+}
+
+.mobile-menu ul {
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.mobile-menu li {
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Navegação em tablets */
+
+@media (max-width: 1023px) {
+  .nav-container {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .logo {
+    width: 50px;
+  }
+  .menu {
+    display: none;
+  }
+
+  header .btn {
+    display: none;
+  }
+
+  .hamburger-btn {
+    display: block; /* Mostra o botão hamburger */
+  }
+
+  .mobile-menu.active {
+    display: block; /* Mostra o menu mobile quando ativo */
+  }
+}
