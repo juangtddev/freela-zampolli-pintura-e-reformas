@@ -46,6 +46,10 @@
     justify-content: flex-start;
     width: 100%;
   }
+
+  .sobre__texto a {
+    margin-top: 20px;
+  }
 }
 @media (max-width: 743px) {
   .sobre {
