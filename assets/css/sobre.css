@@ -38,7 +38,7 @@
   }
 
   .sobre__img {
-    height: 50vh;
+    min-height: 80vh;
   }
 
   .sobre__texto {
