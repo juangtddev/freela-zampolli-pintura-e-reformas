@@ -1,0 +1,48 @@
+.cimento {
+  display: flex;
+  max-width: 80%;
+  margin: 120px auto;
+  gap: 200px;
+}
+
+.cimento__img {
+  width: 100%;
+  background: url("/assets/img/homem-aplicando-cimento-costas.png") center /
+    100% no-repeat;
+  background-size: cover;
+  border-radius: 0.5rem;
+}
+
+.cimento__texto {
+  margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.cimento__texto p {
+  margin-bottom: 20px;
+}
+
+.cimento__texto a {
+  margin-top: 40px;
+}
+
+@media (max-width: 1024px) {
+  .cimento {
+    margin: 60px auto;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .cimento__img {
+    height: 50vh;
+  }
+
+  .cimento__texto {
+    margin: 0 auto;
+    justify-content: flex-start;
+    width: 100%;
+  }
+}

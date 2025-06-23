@@ -16,6 +16,8 @@
 .servicos__cards {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 .card {
   padding: 40px;
@@ -31,24 +33,24 @@
 
 /* Navegação mobile */
 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   .servicos {
-    padding: 30px 10px;
+    margin: 0 auto;
+    padding: 30px;
     gap: 30px;
   }
 
   .servicos__textos {
-    text-align: center;
+    text-align: left;
     width: 100%;
   }
 
   .servicos__cards {
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 30px;
   }
   .card {
-    transform: scale(0.9);
-    margin: 0;
+    margin: 0 auto;
   }
 }
