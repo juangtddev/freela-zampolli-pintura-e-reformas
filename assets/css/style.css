@@ -33,6 +33,10 @@ body {
   margin: 0 auto;
 }
 
+section {
+  scroll-margin-top: 80px; /* ou o tamanho exato da altura do seu nav */
+}
+
 h1,
 h2,
 h3,
@@ -84,6 +88,9 @@ a.btn:hover {
 
 @media (max-width: 743px) {
   h1 {
+    font-size: 2rem;
+  }
+  h3 {
     font-size: 2rem;
   }
 }

@@ -1,19 +1,20 @@
-.cimento {
+.sobre {
   display: flex;
+  flex-direction: row-reverse;
   max-width: 80%;
   margin: 120px auto;
   gap: 200px;
 }
 
-.cimento__img {
+.sobre__img {
   width: 100%;
-  background: url("/assets/img/homem-aplicando-cimento-costas.webp") top / 100%
+  background: url("/assets/img/homem-aplicando-cimento-frente.webp") top / 100%
     no-repeat;
   background-size: cover;
   border-radius: 0.5rem;
 }
 
-.cimento__texto {
+.sobre__texto {
   margin: 80px auto;
   display: flex;
   flex-direction: column;
@@ -21,34 +22,33 @@
   width: 100%;
 }
 
-.cimento__texto p {
+.sobre__texto p {
   margin-bottom: 20px;
 }
 
-.cimento__texto a {
+.sobre__texto a {
   margin-top: 40px;
 }
 
 @media (max-width: 1024px) {
-  .cimento {
+  .sobre {
     margin: 60px auto;
     flex-direction: column;
     gap: 50px;
   }
 
-  .cimento__img {
+  .sobre__img {
     height: 50vh;
   }
 
-  .cimento__texto {
+  .sobre__texto {
     margin: 0 auto;
     justify-content: flex-start;
     width: 100%;
   }
 }
-
 @media (max-width: 743px) {
-  .cimento {
+  .sobre {
     max-width: 90%;
   }
 }

@@ -36,7 +36,8 @@
 @media (max-width: 1024px) {
   .servicos {
     margin: 0 auto;
-    padding: 30px;
+    padding: 60px 0;
+    max-width: 80%;
     gap: 30px;
   }
 
@@ -52,5 +53,11 @@
   }
   .card {
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 743px) {
+  .servicos {
+    max-width: 90%;
   }
 }
